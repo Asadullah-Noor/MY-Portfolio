@@ -1,14 +1,15 @@
 // FILE: src/App.jsx
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
-import Home from './assets/Pages/Home.jsx';
-import Project from './assets/Pages/Project.jsx';
-import ResumA from './assets/Pages/Resume.jsx';
+import Home from './Pages/Home.jsx';
+import Project from './Pages/Project.jsx';
+import ResumA from './Pages/Resume.jsx';
+
 const App = () => {
   return (
     <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/project" element={<Project />} />
+      <Route path="/" element={<Home/>} />
+      <Route path="/project" element={<Project/>} />
       <Route path="/resume" element={< ResumA/>} />
     </Routes>
   );
